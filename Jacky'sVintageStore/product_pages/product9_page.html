@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/product1_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="shortcut icon" href="../src/img/JackiesLogoV2AlphaLogo.png" type="image/x-icon">
+    <title>Commande - Pouf</title>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="../index.html"><img src="../src/img/JackiesLogoV2AlphaLogo.png" alt="Logo" class="logo"></a>
+            <div class="navigation">
+                <a href="../index.html">Accueil</a>
+                <a href="../categorie.html">Magasin</a>
+                <a href="../informations.html">Informations</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+        </header>
+    </section>
+    <div class="container">
+        <div class="product">
+            <div class="gallery">
+                <img src="images/product9-1-resize.png" id="productImg" alt="Image du premier produit">
+                <div class="controls">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+            </div>
+            <div class="details">
+                <h1>Pouf année 70</h1>
+                <h2>€30.00</h2>
+                <h3>Certifié <i class="fa-solid fa-certificate"></i></h3>
+                <p>Ce pouf provient des années 70. Il est de couleur beige . De bonne qualité et robuste, il peut également servir de rangement, comme le montrent les images. </p>
+                <form>
+                    <div class="size-select">
+                        <p>Contact :</p>
+                        <label for="mail">
+                            <input type="radio" name="size" id="mail">
+                            <span>Mail</span>
+                        </label>
+                        <label for="phone">
+                            <input type="radio" name="size" id="phone">
+                            <span>Téléphone</span>
+                        </label>
+                    </div>
+                    <p class="contact">Si vous souhaitez acheter cet objet, veuillez cliquer sur le bouton ci-dessous, puis veuillez me contacter par mail ou numéro de téléphone (à sélectionner ci-dessus).</p>
+                    <div class="button">
+                        <a href="../contact.html">Commander</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Jacky's Store</h3>
+            <p>Si vous avez diverses questions en rapport avec ce site ainsi qu'au fonctionnement de celui-ci, veuillez vous rendre dans la rubrique "Contact".</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/jacky.lebourgeois.9"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/theo__lbg/"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 Jacky's Store. developed by <span>Awk.</span></p>
+        </div>
+    </footer>
+
+    <script>
+
+        let productImg = document.getElementById("productImg");
+        let btn = document.getElementsByClassName("btn");
+
+        btn[0].onclick = function(){
+            productImg.src = "images/product9-1-resize.png";
+            for(bt of btn){
+                bt.classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[1].onclick = function(){
+            productImg.src = "images/product9-2-resize.png";
+            for(bt of btn){
+                bt.classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[2].onclick = function(){
+            productImg.src = "images/product9-3-resize.png";
+            for(bt of btn){
+                bt.classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+    </script>
+
+</body>
+</html>

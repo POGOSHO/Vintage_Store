@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1c9a8;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #f1c9a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product{
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+}
+
+.gallery{
+    flex-basis: 47%;
+    background: #222A33;
+    transform: scale(1.08);
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 20px;
+}
+
+.gallery img{
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+}
+
+.details{
+    flex-basis: 53%;
+    background: #fff;
+    padding: 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    font-weight: 500;
+    color: #777;
+    border-radius: 20px;
+}
+
+.details h1{
+    color: #222A33;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.details h2{
+    color: rgb(86, 76, 69);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.details h3{
+    color: #ffd119;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.details form{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.size-select{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.size-select p{
+    width: 70px;
+    margin-right: 40px;
+}
+
+.size-select input:checked + span{
+    color: #D05032;
+    font-weight: 600;
+}
+
+.size-select span:hover{
+    color: #222A33;
+    transition: all 0.2s;
+}
+
+.size-select input{
+    display: none;
+}
+
+.size-select span{
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.contact{
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #333;
+}
+form a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+form .button{
+    background: #D05032;
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    margin-top: 50px;
+    box-shadow: 0 10px 10px rgba(240, 98, 63, 0.25);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+form .button:hover{
+    transform: scale(1.04);
+    transition: all  0.2s;
+}
+
+.controls{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn.active{
+    background: #D05032;
+    transition: all 0.2s;
+}
+
+header{
+    position: relative;
+    top: 0;
+    background: #222A33;
+    width: 100%;
+    padding: 55px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    width: 100px;
+}
+
+header .navigation a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+header .navigation a:not(:last-child){
+    margin-right: 30px;
+}
+
+header .navigation a:hover{
+    background: #D05032;
+}
+
+footer {
+    background: #222A33;
+    padding-top: 40px;
+    color: #fff;
+    position: absolute;
+    top: 1120px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #222A33;
+}
+
+.footer-content h3{
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 5rem;
+}
+
+.footer-content p{
+    max-width: 600px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 2rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: #D05032;
+}
+
+.footer-bottom{
+    background: #85321f;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 15px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
